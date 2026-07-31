@@ -1,0 +1,148 @@
+[gd_scene format=3 uid="uid://bp82qug8lrchp"]
+
+[ext_resource type="Shader" uid="uid://b0romfbnc7ba5" path="res://shaders/blurr.gdshader" id="1_2o76q"]
+[ext_resource type="Script" uid="uid://ckwvk0jtk36qa" path="res://scripts/menus/main_menu.gd" id="1_ng0o5"]
+[ext_resource type="FontFile" uid="uid://dlteif3h71dbo" path="res://fonts/EightBitDragon-anqx.ttf" id="3_2o76q"]
+[ext_resource type="StyleBox" uid="uid://vaw3lmco7oy8" path="res://resources/main_menu_button_idle_style.tres" id="4_6bivr"]
+[ext_resource type="StyleBox" uid="uid://yj850arehjh7" path="res://resources/main_menu_button_pressed_style.tres" id="5_imvie"]
+[ext_resource type="Texture2D" uid="uid://bro7glnu4oanp" path="res://assets/background/main_menu_bg.png" id="6_ng0o5"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_imvie"]
+shader = ExtResource("1_2o76q")
+shader_parameter/blur_amount = 3.0
+
+[node name="MainMenu" type="Control" unique_id=436316378]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ng0o5")
+
+[node name="Panel" type="Panel" parent="." unique_id=2082157921]
+z_index = 1
+material = SubResource("ShaderMaterial_imvie")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1637826200]
+custom_minimum_size = Vector2(639, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_ng0o5")
+expand_mode = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1721925262]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 40.0
+grow_horizontal = 2
+theme_override_constants/margin_top = 20
+
+[node name="Label" type="Label" parent="MarginContainer" unique_id=1337093277]
+z_index = 2
+layout_mode = 2
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("3_2o76q")
+theme_override_font_sizes/font_size = 45
+text = "VILLAGE"
+
+[node name="MarginContainer2" type="MarginContainer" parent="." unique_id=1072617623]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 40.0
+grow_horizontal = 2
+theme_override_constants/margin_top = 70
+
+[node name="Label2" type="Label" parent="MarginContainer2" unique_id=1378379338]
+z_index = 2
+layout_mode = 2
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("3_2o76q")
+theme_override_font_sizes/font_size = 45
+text = "ADVENTURE"
+
+[node name="Button3" type="Control" parent="." unique_id=1662212299]
+z_index = 2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Button3" unique_id=1791822174]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -71.0
+offset_top = -136.0
+offset_right = 72.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_bottom = 40
+
+[node name="MenuButtons" type="VBoxContainer" parent="Button3/MarginContainer" unique_id=1753036205]
+layout_mode = 2
+
+[node name="PlayButton" type="Button" parent="Button3/MarginContainer/MenuButtons" unique_id=1997521988]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_2o76q")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = ExtResource("4_6bivr")
+theme_override_styles/pressed = ExtResource("5_imvie")
+theme_override_styles/hover = ExtResource("5_imvie")
+theme_override_styles/hover_pressed = ExtResource("5_imvie")
+theme_override_styles/disabled = ExtResource("4_6bivr")
+theme_override_styles/disabled_mirrored = ExtResource("4_6bivr")
+theme_override_styles/focus = ExtResource("4_6bivr")
+text = "PLAY"
+
+[node name="OptionButton" type="Button" parent="Button3/MarginContainer/MenuButtons" unique_id=1016546703]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_2o76q")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = ExtResource("4_6bivr")
+theme_override_styles/pressed = ExtResource("5_imvie")
+theme_override_styles/hover = ExtResource("5_imvie")
+theme_override_styles/hover_pressed = ExtResource("5_imvie")
+theme_override_styles/disabled = ExtResource("4_6bivr")
+theme_override_styles/disabled_mirrored = ExtResource("4_6bivr")
+theme_override_styles/focus = ExtResource("4_6bivr")
+text = "OPTIONS"
+
+[node name="QuitButton" type="Button" parent="Button3/MarginContainer/MenuButtons" unique_id=1112345655]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_2o76q")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = ExtResource("4_6bivr")
+theme_override_styles/pressed = ExtResource("5_imvie")
+theme_override_styles/hover = ExtResource("5_imvie")
+theme_override_styles/hover_pressed = ExtResource("5_imvie")
+theme_override_styles/disabled = ExtResource("4_6bivr")
+theme_override_styles/disabled_mirrored = ExtResource("4_6bivr")
+theme_override_styles/focus = ExtResource("4_6bivr")
+text = "QUIT"
