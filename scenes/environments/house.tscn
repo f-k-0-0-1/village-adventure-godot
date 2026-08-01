@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://b14db6qj70q5m"]
+
+[node name="House" type="StaticBody2D" unique_id=1194815862]
+collision_mask = 0
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=871984085]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=264620839]

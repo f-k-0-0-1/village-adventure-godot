@@ -1,0 +1,265 @@
+[gd_scene format=3 uid="uid://e28x0xdmol2v"]
+
+[ext_resource type="Script" uid="uid://vpkidhymc7fc" path="res://scripts/environments/grass_scatter_area.gd" id="1_kxsdx"]
+[ext_resource type="PackedScene" uid="uid://dqvd1pn828trk" path="res://scenes/environments/grass_tuft.tscn" id="2_dcw4i"]
+[ext_resource type="Script" uid="uid://bhux6ahcey5ci" path="res://scripts/environments/grass_tuft.gd" id="3_757xl"]
+[ext_resource type="Texture2D" uid="uid://c2j7u4t7yijl6" path="res://assets/village_tilesets/2 Objects/5 Grass/1.png" id="4_7rqrj"]
+[ext_resource type="Texture2D" uid="uid://cxy68fjt67rvd" path="res://assets/village_tilesets/2 Objects/5 Grass/2.png" id="5_37cdq"]
+[ext_resource type="Texture2D" uid="uid://dgq4yywnm5y7r" path="res://assets/village_tilesets/2 Objects/5 Grass/3.png" id="6_50l7y"]
+[ext_resource type="Texture2D" uid="uid://bxefhs3ehgmt7" path="res://assets/village_tilesets/2 Objects/5 Grass/4.png" id="7_clqhm"]
+[ext_resource type="Texture2D" uid="uid://b14c6fpj8ousy" path="res://assets/village_tilesets/2 Objects/5 Grass/5.png" id="8_lcrgl"]
+[ext_resource type="Texture2D" uid="uid://bnv6rh5c15jlf" path="res://assets/village_tilesets/2 Objects/5 Grass/6.png" id="9_bdajk"]
+
+[node name="GrassScatterArea" type="Node2D" unique_id=1083311319]
+script = ExtResource("1_kxsdx")
+scatter_area = Rect2(0, 0, 300, 200)
+
+[node name="grass_tuft" type="Sprite2D" parent="." unique_id=1662812315 instance=ExtResource("2_dcw4i")]
+position = Vector2(128.02055, 125.45192)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112902" type="Sprite2D" parent="." unique_id=643223323 instance=ExtResource("2_dcw4i")]
+position = Vector2(7.669656, 86.273834)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112903" type="Sprite2D" parent="." unique_id=416410414 instance=ExtResource("2_dcw4i")]
+position = Vector2(77.43995, 99.30586)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112904" type="Sprite2D" parent="." unique_id=1487352834 instance=ExtResource("2_dcw4i")]
+position = Vector2(222.76483, 5.706218)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112905" type="Sprite2D" parent="." unique_id=754806679 instance=ExtResource("2_dcw4i")]
+position = Vector2(23.41599, 153.65596)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112906" type="Sprite2D" parent="." unique_id=2033723078 instance=ExtResource("2_dcw4i")]
+position = Vector2(41.83196, 64.607056)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112907" type="Sprite2D" parent="." unique_id=1457234815 instance=ExtResource("2_dcw4i")]
+position = Vector2(105.086815, 139.18895)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112908" type="Sprite2D" parent="." unique_id=1081153382 instance=ExtResource("2_dcw4i")]
+position = Vector2(10.595899, 119.71016)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112909" type="Sprite2D" parent="." unique_id=1659580005 instance=ExtResource("2_dcw4i")]
+position = Vector2(21.559536, 64.26095)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112910" type="Sprite2D" parent="." unique_id=1104001249 instance=ExtResource("2_dcw4i")]
+position = Vector2(40.840313, 42.633938)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112911" type="Sprite2D" parent="." unique_id=505335884 instance=ExtResource("2_dcw4i")]
+position = Vector2(291.50653, 53.093105)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112912" type="Sprite2D" parent="." unique_id=165498461 instance=ExtResource("2_dcw4i")]
+position = Vector2(143.97778, 12.498091)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112913" type="Sprite2D" parent="." unique_id=1323277512 instance=ExtResource("2_dcw4i")]
+position = Vector2(64.92133, 51.338364)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112914" type="Sprite2D" parent="." unique_id=1550304804 instance=ExtResource("2_dcw4i")]
+position = Vector2(139.31488, 126.29547)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112915" type="Sprite2D" parent="." unique_id=137766977 instance=ExtResource("2_dcw4i")]
+position = Vector2(198.41121, 125.29121)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112916" type="Sprite2D" parent="." unique_id=713524884 instance=ExtResource("2_dcw4i")]
+position = Vector2(157.24214, 33.023407)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112917" type="Sprite2D" parent="." unique_id=435529720 instance=ExtResource("2_dcw4i")]
+position = Vector2(261.3332, 171.48032)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112918" type="Sprite2D" parent="." unique_id=616002274 instance=ExtResource("2_dcw4i")]
+position = Vector2(264.76028, 198.76216)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112919" type="Sprite2D" parent="." unique_id=175032282 instance=ExtResource("2_dcw4i")]
+position = Vector2(265.92538, 121.058945)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112920" type="Sprite2D" parent="." unique_id=2026810505 instance=ExtResource("2_dcw4i")]
+position = Vector2(280.41116, 0.91136193)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112921" type="Sprite2D" parent="." unique_id=2107293985 instance=ExtResource("2_dcw4i")]
+position = Vector2(152.1174, 152.77232)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112922" type="Sprite2D" parent="." unique_id=835496507 instance=ExtResource("2_dcw4i")]
+position = Vector2(223.16638, 126.85716)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112923" type="Sprite2D" parent="." unique_id=1662059295 instance=ExtResource("2_dcw4i")]
+position = Vector2(192.87141, 150.627)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112924" type="Sprite2D" parent="." unique_id=257058086 instance=ExtResource("2_dcw4i")]
+position = Vector2(233.80705, 157.20947)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112925" type="Sprite2D" parent="." unique_id=924646438 instance=ExtResource("2_dcw4i")]
+position = Vector2(102.85889, 110.66536)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112926" type="Sprite2D" parent="." unique_id=162044549 instance=ExtResource("2_dcw4i")]
+position = Vector2(103.45184, 191.057)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112927" type="Sprite2D" parent="." unique_id=2062860868 instance=ExtResource("2_dcw4i")]
+position = Vector2(255.11, 88.12915)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112928" type="Sprite2D" parent="." unique_id=483240666 instance=ExtResource("2_dcw4i")]
+position = Vector2(266.0039, 72.735565)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112929" type="Sprite2D" parent="." unique_id=909839378 instance=ExtResource("2_dcw4i")]
+position = Vector2(60.092297, 141.38513)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112930" type="Sprite2D" parent="." unique_id=131138775 instance=ExtResource("2_dcw4i")]
+position = Vector2(221.88608, 27.233866)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112931" type="Sprite2D" parent="." unique_id=70975546 instance=ExtResource("2_dcw4i")]
+position = Vector2(211.76663, 112.83054)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112932" type="Sprite2D" parent="." unique_id=228697173 instance=ExtResource("2_dcw4i")]
+position = Vector2(205.47188, 59.16558)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112933" type="Sprite2D" parent="." unique_id=1612137488 instance=ExtResource("2_dcw4i")]
+position = Vector2(95.44726, 191.54622)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112934" type="Sprite2D" parent="." unique_id=64249642 instance=ExtResource("2_dcw4i")]
+position = Vector2(114.754845, 113.51999)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112935" type="Sprite2D" parent="." unique_id=2146260713 instance=ExtResource("2_dcw4i")]
+position = Vector2(73.060646, 179.84966)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112936" type="Sprite2D" parent="." unique_id=1545790850 instance=ExtResource("2_dcw4i")]
+position = Vector2(61.58198, 80.32806)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112937" type="Sprite2D" parent="." unique_id=1496788243 instance=ExtResource("2_dcw4i")]
+position = Vector2(115.61332, 95.040405)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112938" type="Sprite2D" parent="." unique_id=221881016 instance=ExtResource("2_dcw4i")]
+position = Vector2(95.86809, 48.963947)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112939" type="Sprite2D" parent="." unique_id=1336233191 instance=ExtResource("2_dcw4i")]
+position = Vector2(45.956173, 148.91756)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112940" type="Sprite2D" parent="." unique_id=638537548 instance=ExtResource("2_dcw4i")]
+position = Vector2(239.99126, 136.09404)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112941" type="Sprite2D" parent="." unique_id=1515556465 instance=ExtResource("2_dcw4i")]
+position = Vector2(219.89836, 0.64859533)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112942" type="Sprite2D" parent="." unique_id=1232599961 instance=ExtResource("2_dcw4i")]
+position = Vector2(182.49779, 13.957434)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112943" type="Sprite2D" parent="." unique_id=356230552 instance=ExtResource("2_dcw4i")]
+position = Vector2(250.01718, 35.205517)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112944" type="Sprite2D" parent="." unique_id=589690885 instance=ExtResource("2_dcw4i")]
+position = Vector2(52.6842, 76.340126)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112945" type="Sprite2D" parent="." unique_id=774033839 instance=ExtResource("2_dcw4i")]
+position = Vector2(86.22159, 130.97746)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112946" type="Sprite2D" parent="." unique_id=1040563788 instance=ExtResource("2_dcw4i")]
+position = Vector2(164.30928, 92.291595)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112947" type="Sprite2D" parent="." unique_id=1100724108 instance=ExtResource("2_dcw4i")]
+position = Vector2(199.85007, 71.80487)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112948" type="Sprite2D" parent="." unique_id=2056809846 instance=ExtResource("2_dcw4i")]
+position = Vector2(174.28061, 170.59431)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112949" type="Sprite2D" parent="." unique_id=1519933999 instance=ExtResource("2_dcw4i")]
+position = Vector2(8.355504, 163.22446)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])
+
+[node name="@Sprite2D@112950" type="Sprite2D" parent="." unique_id=843133523 instance=ExtResource("2_dcw4i")]
+position = Vector2(101.51912, 125.11078)
+script = ExtResource("3_757xl")
+grass_textures = Array[Texture2D]([ExtResource("4_7rqrj"), ExtResource("5_37cdq"), ExtResource("6_50l7y"), ExtResource("7_clqhm"), ExtResource("8_lcrgl"), ExtResource("9_bdajk")])

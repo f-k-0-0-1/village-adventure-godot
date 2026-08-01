@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dqvd1pn828trk"]
+
+[ext_resource type="Script" uid="uid://bhux6ahcey5ci" path="res://scripts/environments/grass_tuft.gd" id="1_xsahf"]
+[ext_resource type="Texture2D" uid="uid://c2j7u4t7yijl6" path="res://assets/village_tilesets/2 Objects/5 Grass/1.png" id="2_qpkd1"]
+[ext_resource type="Texture2D" uid="uid://cxy68fjt67rvd" path="res://assets/village_tilesets/2 Objects/5 Grass/2.png" id="3_epewl"]
+[ext_resource type="Texture2D" uid="uid://dgq4yywnm5y7r" path="res://assets/village_tilesets/2 Objects/5 Grass/3.png" id="4_yx0k5"]
+[ext_resource type="Texture2D" uid="uid://bxefhs3ehgmt7" path="res://assets/village_tilesets/2 Objects/5 Grass/4.png" id="5_644yv"]
+[ext_resource type="Texture2D" uid="uid://b14c6fpj8ousy" path="res://assets/village_tilesets/2 Objects/5 Grass/5.png" id="6_55qkc"]
+[ext_resource type="Texture2D" uid="uid://bnv6rh5c15jlf" path="res://assets/village_tilesets/2 Objects/5 Grass/6.png" id="7_2xx6h"]
+
+[node name="grass_tuft" type="Sprite2D" unique_id=1662812315]
+script = ExtResource("1_xsahf")
+grass_textures = Array[Texture2D]([ExtResource("2_qpkd1"), ExtResource("3_epewl"), ExtResource("4_yx0k5"), ExtResource("5_644yv"), ExtResource("6_55qkc"), ExtResource("7_2xx6h")])
