@@ -143,6 +143,7 @@
 [ext_resource type="Texture2D" uid="uid://bbjn03q7fbpas" path="res://assets/village_tilesets/2 Objects/6 Tent/4.png" id="139_iifd6"]
 [ext_resource type="PackedScene" uid="uid://d1qcb3rtnwx2y" path="res://scenes/temp/player.tscn" id="140_s76bw"]
 [ext_resource type="PackedScene" uid="uid://ga4bqhwsj0jc" path="res://scenes/ui/joystick_controls.tscn" id="141_fagxf"]
+[ext_resource type="Script" uid="uid://dwute4r7taw5x" path="res://scripts/environments/fishing_transition_zone.gd" id="144_lqtoc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bv8ww"]
 texture = ExtResource("1_s8xb3")
@@ -1146,6 +1147,9 @@ sources/62 = SubResource("TileSetAtlasSource_clfya")
 sources/63 = SubResource("TileSetAtlasSource_rs8im")
 sources/64 = SubResource("TileSetAtlasSource_hxgip")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qbdj3"]
+size = Vector2(20, 67)
+
 [node name="Village" type="Node2D" unique_id=394819507]
 
 [node name="Grass" type="TileMapLayer" parent="." unique_id=703647147]
@@ -1234,6 +1238,23 @@ z_index = 3
 position = Vector2(546, 456)
 
 [node name="JoystickControl" parent="." unique_id=249377758 instance=ExtResource("141_fagxf")]
+
+[node name="FishingTransitionZone" type="Area2D" parent="." unique_id=569096845]
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("144_lqtoc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FishingTransitionZone" unique_id=140287899]
+z_index = 3
+position = Vector2(933, 225.5)
+shape = SubResource("RectangleShape2D_qbdj3")
+
+[node name="Label" type="Label" parent="FishingTransitionZone" unique_id=569049674]
+offset_left = 791.0
+offset_top = 208.0
+offset_right = 903.0
+offset_bottom = 231.0
+text = "Fishing Site -->"
 
 [editable path="Houses/House"]
 [editable path="Houses/House2"]
