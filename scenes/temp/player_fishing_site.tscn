@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://dbhnl16ovuqx0"]
+
+[ext_resource type="Script" uid="uid://dinhnxwksyyea" path="res://scripts/temp/player_fishing_site.gd" id="1_7huda"]
+[ext_resource type="Texture2D" uid="uid://c3snkylr03fdd" path="res://assets/fishing_set/1 Fisherman/Fisherman_idle.png" id="2_58ghp"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qbdj3"]
+radius = 6.0
+height = 32.0
+
+[node name="player_fishing_site" type="CharacterBody2D" unique_id=1018768409 groups=["Player"]]
+script = ExtResource("1_7huda")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1130639126]
+texture = ExtResource("2_58ghp")
+region_enabled = true
+region_rect = Rect2(0, 0, 30.984205, 48)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1163660479]
+position = Vector2(0, 7)
+shape = SubResource("CapsuleShape2D_qbdj3")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1689086758]
+limit_left = 0
+limit_top = 0
+limit_right = 640
+limit_bottom = 360

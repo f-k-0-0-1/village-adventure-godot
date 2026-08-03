@@ -4,12 +4,13 @@
 [ext_resource type="Texture2D" uid="uid://dj3dg0w2le4pl" path="res://assets/Ground_Tileset_pack/Grass_tileset_2.png" id="2_7vlh2"]
 [ext_resource type="Texture2D" uid="uid://ducgock0fi2cu" path="res://assets/Ground_Tileset_pack/Water_tileset.png" id="3_jlyoc"]
 [ext_resource type="Texture2D" uid="uid://ecugty2tqigu" path="res://assets/fishing_set/3 Objects/Water.png" id="4_mluk3"]
-[ext_resource type="PackedScene" uid="uid://b14db6qj70q5m" path="res://scenes/environments/house.tscn" id="5_jlyoc"]
-[ext_resource type="PackedScene" uid="uid://d1qcb3rtnwx2y" path="res://scenes/temp/player.tscn" id="6_mluk3"]
+[ext_resource type="Texture2D" uid="uid://8bnx8yacp8t3" path="res://assets/fishing_set/3 Objects/Fishing_hut.png" id="6_mdo8w"]
+[ext_resource type="Texture2D" uid="uid://r3eypf1dsk01" path="res://assets/background/Clouds/Clouds V2.png" id="7_cxijy"]
 [ext_resource type="PackedScene" uid="uid://ga4bqhwsj0jc" path="res://scenes/ui/joystick_controls.tscn" id="7_x8crv"]
+[ext_resource type="PackedScene" uid="uid://dbhnl16ovuqx0" path="res://scenes/temp/player_fishing_site.tscn" id="8_mdo8w"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mluk3"]
-size = Vector2(20, 368)
+size = Vector2(22, 368)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_x8crv"]
 texture = ExtResource("2_7vlh2")
@@ -149,40 +150,74 @@ collision_mask = 2
 script = ExtResource("1_k3bnn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="VillageReturnZone" unique_id=2112566644]
-position = Vector2(0, 174)
+position = Vector2(1, 174)
 shape = SubResource("RectangleShape2D_mluk3")
 
 [node name="Ground" type="TileMapLayer" parent="." unique_id=1220865718]
-tile_map_data = PackedByteArray("AAAAAAcAAAABAAAAAAABAAcAAAABAAAAAAACAAcAAAABAAAAAAADAAcAAAABAAAAAAAEAAcAAAABAAAAAAAFAAcAAAABAAAAAAAGAAcAAAABAAAAAAAHAAcAAAABAAAAAAAIAAcAAAABAAAAAAAAAAgAAAABAAEAAAAAAAkAAAABAAEAAAAAAAoAAAABAAEAAAABAAgAAAABAAEAAAABAAkAAAABAAEAAAABAAoAAAABAAEAAAACAAgAAAABAAEAAAACAAkAAAABAAEAAAACAAoAAAABAAEAAAADAAgAAAABAAEAAAADAAkAAAABAAEAAAADAAoAAAABAAEAAAAEAAgAAAABAAEAAAAEAAkAAAABAAEAAAAEAAoAAAABAAEAAAAFAAgAAAABAAEAAAAFAAkAAAABAAEAAAAFAAoAAAABAAEAAAAGAAgAAAABAAEAAAAGAAkAAAABAAEAAAAGAAoAAAABAAEAAAAHAAgAAAABAAEAAAAHAAkAAAABAAEAAAAHAAoAAAABAAEAAAAIAAgAAAABAAEAAAAIAAkAAAABAAEAAAAIAAoAAAABAAEAAAA=")
+z_index = 1
+tile_map_data = PackedByteArray("AAAAAAcAAAABAAAAAAABAAcAAAABAAAAAAACAAcAAAABAAAAAAADAAcAAAABAAAAAAAEAAcAAAABAAAAAAAFAAcAAAABAAAAAAAGAAcAAAABAAAAAAAAAAgAAAABAAEAAAAAAAkAAAABAAEAAAAAAAoAAAABAAEAAAABAAgAAAABAAEAAAABAAkAAAABAAEAAAABAAoAAAABAAEAAAACAAgAAAABAAEAAAACAAkAAAABAAEAAAACAAoAAAABAAEAAAADAAgAAAABAAEAAAADAAkAAAABAAEAAAADAAoAAAABAAEAAAAEAAgAAAABAAEAAAAEAAkAAAABAAEAAAAEAAoAAAABAAEAAAAFAAgAAAABAAEAAAAFAAkAAAABAAEAAAAFAAoAAAABAAEAAAAGAAgAAAABAAEAAAAGAAkAAAABAAEAAAAGAAoAAAABAAEAAAD//wcAAAABAAAAAAD//wgAAAABAAEAAAD//wkAAAABAAEAAAD//woAAAABAAEAAAD//wsAAAABAAEAAAAAAAsAAAABAAEAAAABAAsAAAABAAEAAAACAAsAAAABAAEAAAADAAsAAAABAAEAAAAEAAsAAAABAAEAAAAFAAsAAAABAAEAAAAGAAsAAAABAAEAAAA=")
 tile_set = SubResource("TileSet_06bb8")
 
 [node name="Water" type="TileMapLayer" parent="." unique_id=1255544635]
-tile_map_data = PackedByteArray("AAAJAAcAAAABAAAAAAAKAAcAAAABAAAAAAALAAcAAAABAAAAAAAMAAcAAAABAAAAAAANAAcAAAABAAAAAAAOAAcAAAABAAAAAAAPAAcAAAABAAAAAAAQAAcAAAABAAAAAAARAAcAAAABAAAAAAASAAcAAAABAAAAAAATAAgAAAABAAEAAAATAAkAAAABAAEAAAATAAoAAAABAAEAAAASAAoAAAABAAEAAAARAAoAAAABAAEAAAAQAAoAAAABAAEAAAAPAAoAAAABAAEAAAAOAAoAAAABAAEAAAANAAoAAAABAAEAAAAMAAoAAAABAAEAAAALAAoAAAABAAEAAAAKAAoAAAABAAEAAAAJAAoAAAABAAEAAAAJAAkAAAABAAEAAAAJAAgAAAABAAEAAAAKAAgAAAABAAEAAAALAAgAAAABAAEAAAARAAgAAAABAAEAAAASAAgAAAABAAEAAAASAAkAAAABAAEAAAARAAkAAAABAAEAAAAQAAkAAAABAAEAAAAPAAkAAAABAAEAAAAOAAkAAAABAAEAAAANAAkAAAABAAEAAAAMAAkAAAABAAEAAAALAAkAAAABAAEAAAAKAAkAAAABAAEAAAAMAAgAAAABAAEAAAANAAgAAAABAAEAAAAOAAgAAAABAAEAAAAPAAgAAAABAAEAAAAQAAgAAAABAAEAAAATAAcAAAABAAAAAAA=")
+z_index = 1
+tile_map_data = PackedByteArray("AAAJAAcAAAABAAAAAAAKAAcAAAABAAAAAAALAAcAAAABAAAAAAAMAAcAAAABAAAAAAANAAcAAAABAAAAAAAOAAcAAAABAAAAAAAPAAcAAAABAAAAAAAQAAcAAAABAAAAAAARAAcAAAABAAAAAAASAAcAAAABAAAAAAATAAgAAAABAAEAAAATAAkAAAABAAEAAAATAAoAAAABAAEAAAASAAoAAAABAAEAAAARAAoAAAABAAEAAAAQAAoAAAABAAEAAAAPAAoAAAABAAEAAAAOAAoAAAABAAEAAAANAAoAAAABAAEAAAAMAAoAAAABAAEAAAALAAoAAAABAAEAAAAKAAoAAAABAAEAAAAJAAoAAAABAAEAAAAJAAkAAAABAAEAAAAJAAgAAAABAAEAAAAKAAgAAAABAAEAAAALAAgAAAABAAEAAAARAAgAAAABAAEAAAASAAgAAAABAAEAAAASAAkAAAABAAEAAAARAAkAAAABAAEAAAAQAAkAAAABAAEAAAAPAAkAAAABAAEAAAAOAAkAAAABAAEAAAANAAkAAAABAAEAAAAMAAkAAAABAAEAAAALAAkAAAABAAEAAAAKAAkAAAABAAEAAAAMAAgAAAABAAEAAAANAAgAAAABAAEAAAAOAAgAAAABAAEAAAAPAAgAAAABAAEAAAAQAAgAAAABAAEAAAATAAcAAAABAAAAAAAUAAcAAAABAAAAAAAVAAcAAAABAAAAAAAWAAcAAAABAAAAAAAUAAgAAAABAAEAAAAVAAgAAAABAAEAAAAWAAgAAAABAAEAAAAVAAkAAAABAAEAAAAUAAkAAAABAAEAAAAVAAoAAAABAAEAAAAUAAoAAAABAAEAAAAWAAoAAAABAAEAAAAWAAkAAAABAAEAAAAJAAsAAAABAAEAAAAKAAsAAAABAAEAAAALAAsAAAABAAEAAAAMAAsAAAABAAEAAAANAAsAAAABAAEAAAAOAAsAAAABAAEAAAAPAAsAAAABAAEAAAAQAAsAAAABAAEAAAARAAsAAAABAAEAAAASAAsAAAABAAEAAAATAAsAAAABAAEAAAAUAAsAAAABAAEAAAAVAAsAAAABAAEAAAAWAAsAAAABAAEAAAAIAAcAAAABAAAAAAAHAAcAAAABAAAAAAAHAAgAAAABAAEAAAAIAAgAAAABAAEAAAAIAAkAAAABAAEAAAAHAAkAAAABAAEAAAAHAAoAAAABAAEAAAAIAAoAAAABAAEAAAAHAAsAAAABAAEAAAAIAAsAAAABAAEAAAA=")
 tile_set = SubResource("TileSet_lroka")
-
-[node name="House" parent="." unique_id=1194815862 instance=ExtResource("5_jlyoc")]
-
-[node name="Player" parent="." unique_id=1711901017 instance=ExtResource("6_mluk3")]
-z_index = 3
-position = Vector2(64, 198)
 
 [node name="Background" type="Node2D" parent="." unique_id=1442090390]
 z_index = -1
 
 [node name="ColorRect" type="ColorRect" parent="Background" unique_id=1065642672]
-offset_right = 845.0
-offset_bottom = 352.0
+offset_left = -145.0
+offset_top = 1.0
+offset_right = 854.0
+offset_bottom = 353.0
 mouse_filter = 1
 color = Color(0.49735796, 0.99999994, 0.99658245, 1)
 
 [node name="Clouds" type="Node2D" parent="." unique_id=1509054477]
 
 [node name="Parallax2D" type="Parallax2D" parent="Clouds" unique_id=1375469470]
+repeat_size = Vector2(200, 0)
+autoscroll = Vector2(20, 0)
+repeat_times = 3
 
-[node name="Sprite2D" type="Sprite2D" parent="Clouds/Parallax2D" unique_id=1564502617]
-position = Vector2(184, 63)
-rotation = 3.1415927
+[node name="Cloud" type="Sprite2D" parent="Clouds/Parallax2D" unique_id=1564502617]
+position = Vector2(77, 40)
+texture = ExtResource("7_cxijy")
+region_enabled = true
+region_rect = Rect2(-0.5, 0.5, 75, 50)
+
+[node name="Cloud2" type="Sprite2D" parent="Clouds/Parallax2D" unique_id=843452514]
+position = Vector2(209, 40)
+texture = ExtResource("7_cxijy")
+region_enabled = true
+region_rect = Rect2(73.103714, 13.006567, 48.30333, 38.55114)
+
+[node name="Parallax2D2" type="Parallax2D" parent="Clouds" unique_id=437330221]
+repeat_size = Vector2(200, 0)
+autoscroll = Vector2(25, 0)
+repeat_times = 3
+
+[node name="Cloud3" type="Sprite2D" parent="Clouds/Parallax2D2" unique_id=528953629]
+position = Vector2(141, 40)
+texture = ExtResource("7_cxijy")
+region_enabled = true
+region_rect = Rect2(2.589634, 50.15573, 47.31667, 33.641182)
+
+[node name="Cloud4" type="Sprite2D" parent="Clouds/Parallax2D2" unique_id=1021125064]
+position = Vector2(273, 40)
+texture = ExtResource("7_cxijy")
+region_enabled = true
+region_rect = Rect2(65.32803, 50.85672, 57.730988, 37.152344)
 
 [node name="JoystickControl" parent="." unique_id=249377758 instance=ExtResource("7_x8crv")]
 
-[editable path="House"]
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1429839361]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=1533668314]
+position = Vector2(248, 201)
+texture = ExtResource("6_mdo8w")
+
+[node name="player_fishing_site" parent="." unique_id=1018768409 instance=ExtResource("8_mdo8w")]
+position = Vector2(40, 200)
+collision_layer = 2
