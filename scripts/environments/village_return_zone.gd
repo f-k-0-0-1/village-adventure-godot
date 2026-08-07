@@ -7,6 +7,6 @@ func _ready() -> void:
 
 func _on_body_entered(body: Node2D) -> void:
 	# Check if the colliding body is the player using groups or class type
-	if body is CharacterBody2D or body.is_in_group("Player"):
+	if body.is_in_group("Player"):
 		print("Fishing zone entered! Switching to fishing site...")
 		SceneManager.go_to_village()

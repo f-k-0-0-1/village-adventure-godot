@@ -13,6 +13,8 @@ var joystick_dir: Vector2 = Vector2.ZERO  # Public variable read by the player s
 var base_global_pos: Vector2
 
 func _ready() -> void:
+	base.visible = false
+	tip.visible = false
 	# Ensure the touch zone can receive mouse/touch input across the screen or its area
 	left_touch_zone.mouse_filter = Control.MOUSE_FILTER_STOP
 
@@ -22,10 +24,14 @@ func _input(event: InputEvent) -> void:
 		if event.pressed:
 			# Check if touch/click is inside the LeftTouchZone rect
 			if left_touch_zone.get_global_rect().has_point(event.position):
+				base.visible = true
+				tip.visible = true
 				if touch_index == -1:
 					touch_index = event.index if event is InputEventScreenTouch else 0
 					update_joystick(event.position)
 		else:
+			base.visible = false
+			tip.visible = false
 			if touch_index == (event.index if event is InputEventScreenTouch else 0):
 				reset_joystick()
 

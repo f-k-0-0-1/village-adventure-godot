@@ -1,0 +1,6 @@
+[gd_resource type="Resource" script_class="FishItem" format=3 uid="uid://5l4rl47rpp5y"]
+
+[ext_resource type="Script" uid="uid://p0f8tgjdo8mk" path="res://scripts/fish/fish_item.gd" id="1_cg0qi"]
+
+[resource]
+script = ExtResource("1_cg0qi")

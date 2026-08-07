@@ -1,6 +1,6 @@
 extends Control
 
-@export_file("*.tscn") var first_game_scene: String = "res://scenes/environments/village.tscn"
+@export_file("*.tscn") var first_game_scene: String = "res://scenes/environments/fishing_site.tscn"
 
 @onready var play_button: Button = $Button3/MarginContainer/MenuButtons/PlayButton
 @onready var option_button: Button = $Button3/MarginContainer/MenuButtons/OptionButton
